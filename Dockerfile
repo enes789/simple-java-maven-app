@@ -2,7 +2,7 @@ FROM openjdk:8-jre-slim
 ARG BUILD_ID
 
 ENV JAVA_OPTIONS -Xms200m \
-    Dcom.sun.management.jmxremote.ssl=false \
+    -Dcom.sun.management.jmxremote.ssl=false \
     -Dcom.sun.management.jmxremote.authenticate=false \
     -Dcom.sun.management.jmxremote.port=5000 \
     -Dcom.sun.management.jmxremote.rmi.port=5000 \
